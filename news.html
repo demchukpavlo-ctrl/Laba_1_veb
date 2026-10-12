@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="Author" content="Демчук Павло">
+<meta name="Description" content="Новини вигаданої фірми TechNode (комп'ютерні аксесуари)">
+<meta name="Keywords" content="TechNode, новини, акції, процесори, монітори, вінчестери">
+<title>Новини компанії TechNode</title>
+<style type="text/css" media="screen">
+  body { background:#f0fff0; font-family:Arial, Helvetica, sans-serif; max-width:960px; margin:0 auto; padding:16px; }
+  .layout { display:flex; gap:16px; align-items:flex-start; }
+  .layout > section { flex:3; }
+  .layout > aside { flex:1; }
+</style>
+</head>
+<body>
+
+<!-- Частина 3: img, map, area, style, ins, del, sup, sub, bdo, div, span, footer, section, aside, wbr, rp згідно з варіантом 4 -->
+<header>
+  <h1>Новини компанії TechNode</h1>
+</header>
+
+<nav>
+  <img id="banner" src="images/banner.png" alt="Навігація по сайту" height="100" width="600" usemap="#newsmap" style="border:0;">
+  <map name="newsmap" shape="default" accesskey="n" lang="uk" onblur="console.log('map blur')" target="_self" title="Навігаційна карта сайту">
+    <area onblur="console.log('area blur')" style="cursor:pointer;" onfocus="console.log('area focus')" tabindex="1" shape="rect" coords="0,0,199,99" href="index.html" alt="Про автора">
+    <area onblur="console.log('area blur')" style="cursor:pointer;" onfocus="console.log('area focus')" tabindex="2" shape="rect" coords="200,0,399,99" href="company.html" alt="Про компанію">
+    <area onblur="console.log('area blur')" style="cursor:pointer;" onfocus="console.log('area focus')" tabindex="3" shape="rect" coords="400,0,599,99" href="news.html" alt="Новини">
+  </map>
+</nav>
+
+<div class="layout">
+
+<section style="background:#ffffff; padding:8px 16px;" id="news-list">
+  <h2>Останні новини</h2>
+
+  <div style="border-left:4px solid #0b5394; padding:6px 12px; margin:12px 0;" title="Новина 1">
+    <h3>12 жовтня 2026 — відкрито новий склад</h3>
+    <p>
+      Компанія TechNode відкрила в Чернівцях новий склад площею 1 200 м<sup id="sup-area" class="unit" title="квадратних метрів">2</sup>.
+      Це дозволить
+      <ins cite="company.html" style="background:#d4f8d4; text-decoration:none;" class="added">скоротити термін доставки до одного дня</ins>
+      замість <del cite="company.html" lang="uk">трьох днів</del>.
+    </p>
+  </div>
+
+  <div style="border-left:4px solid #1c7ed6; padding:6px 12px; margin:12px 0;" title="Новина 2">
+    <h3>5 жовтня 2026 — нові монітори в продажу</h3>
+    <p>
+      <span style="color:#cc0000; font-weight:bold;" id="hot">Акція!</span>
+      У продажу з'явилися монітори з частотою оновлення 144
+      <ruby>Гц<rp id="rp-open" class="rp">(</rp><rt>герц</rt><rp id="rp-close" class="rp">)</rp></ruby>
+      та високо<wbr style="word-break:normal;">продуктивні відеокарти для комфортної гри.
+    </p>
+  </div>
+
+  <div style="border-left:4px solid #3b9cf0; padding:6px 12px; margin:12px 0;" title="Новина 3">
+    <h3>28 вересня 2026 — знижки на SSD</h3>
+    <p>
+      Твердотільні накопичувачі виготовляють на основі кремнію (оксид кремнію SiO<sub lang="en" style="font-size:smaller;" id="sub-sio2">2</sub>),
+      тому вони компактні та швидкі. Усі моделі Kingston тепер дешевші на 15%.
+    </p>
+    <p>
+      Приклад використання тегу bdo: назва фірми, виведена справа наліво —
+      <bdo dir="rtl">TechNode</bdo>.
+    </p>
+  </div>
+</section>
+
+<aside style="background:#e8f4ff; padding:8px 12px;">
+  <h3>Швидкі посилання</h3>
+  <p><a href="index.html">Про автора</a></p>
+  <p><a href="company.html">Про компанію</a></p>
+  <p><a href="news.html">Новини</a></p>
+</aside>
+
+</div>
+
+<footer class="site-footer" style="margin-top:16px; border-top:1px solid #999999; padding-top:8px;">
+  Автор сайту: Демчук Павло<br>
+  Телефон: (0372) 00-00-00<br>
+  Електронна пошта: <a href="mailto:info@technode.example">info@technode.example</a><br>
+  &copy; 2026 TechNode
+</footer>
+
+</body>
+</html>
